@@ -3,7 +3,7 @@
 
 
 <p align="center">
-  <img  src="gradientButtonsAppIcon.png">
+  <img  src="AppIcon.png">
 </p>
 
 Created this application to try out different gradient styles for buttons and text in SwiftUI.
