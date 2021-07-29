@@ -20,7 +20,7 @@ struct ContentView: View {
         VStack(spacing: 60){
             
             Text("Gradient Buttons")
-                .font(.system(size: 40))
+                .font(.system(size: 45))
                 .bold()
                 .gradientForeground(colors: [.blue, .purple, .pink])
             
@@ -29,6 +29,7 @@ struct ContentView: View {
                 //                print("Linear Gradient Button Tapped")
             } label: {
                 Text("Linear Gradient")
+                    .font(.system(size: 30))
                     .bold()
                     .frame(width: 300, height: 60)
                     .foregroundColor(.white)
@@ -43,10 +44,10 @@ struct ContentView: View {
             } label: {
                 Text("Linear Gradient")
                     .bold()
-                    .font(.system(size: 25))
+                    .font(.system(size: 35))
                     .frame(width: 280, height: 60)
                     .gradientForeground(colors: [.blue, .purple,.pink])
-                    .overlay(Capsule().stroke(LinearGradient(gradient: brandGradient, startPoint: .leading, endPoint: .trailing) , lineWidth: 5.0)
+                    .overlay(RoundedRectangle(cornerRadius: 12).stroke(LinearGradient(gradient: brandGradient, startPoint: .leading, endPoint: .trailing) , lineWidth: 5.0)
                     )
                 
             }
